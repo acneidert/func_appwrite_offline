@@ -1,0 +1,22 @@
+{
+  "name": "@acneidert/func_appwrite_offline",
+  "version": "1.0.0",
+  "description": "Change in ``` appwrite.json``` for your options",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acneidert/func_appwrite_offline.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acneidert/func_appwrite_offline/issues"
+  },
+  "homepage": "https://github.com/acneidert/func_appwrite_offline#readme",
+  "devDependencies": {
+    "jest": "^29.1.2"
+  }
+}

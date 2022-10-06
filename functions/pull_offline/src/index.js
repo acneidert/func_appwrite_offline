@@ -1,5 +1,7 @@
 const sdk = require("node-appwrite");
-
+/**
+ * Send documents... 
+ */
 /*
   'req' variable has:
     'headers' - object with request headers

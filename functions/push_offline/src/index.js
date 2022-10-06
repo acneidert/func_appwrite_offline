@@ -1,5 +1,11 @@
 const sdk = require("node-appwrite");
 
+/**
+ * 
+ *  Retrieve Documents
+ * 
+ */
+
 /*
   'req' variable has:
     'headers' - object with request headers

@@ -10,6 +10,8 @@
             "entrypoint": "src/index.js",
             "ignore": [
                 "node_modules",
+                "__tests__",
+                "__mocks__",
                 ".npm"
             ],
             "execute": [],
@@ -25,6 +27,8 @@
             "entrypoint": "src/index.js",
             "ignore": [
                 "node_modules",
+                "__tests__",
+                "__mocks__",
                 ".npm"
             ],
             "execute": [],
