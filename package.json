@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/acneidert/func_appwrite_offline#readme",
   "devDependencies": {
-    "jest": "^29.1.2"
+    "jest": "^29.1.2",
+    "lodash": "^4.17.21"
   }
 }
