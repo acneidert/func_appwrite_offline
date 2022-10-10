@@ -1,4 +1,5 @@
 const sdk = require("node-appwrite");
+const pushFunction = require("./pushFunction");
 
 /**
  * 
@@ -46,7 +47,5 @@ module.exports = async function (req, res) {
       .setSelfSigned(true);
   }
 
-  res.json({
-    areDevelopersAwesome: true,
-  });
+  res.json(pushFunction(database, req.data ));
 };

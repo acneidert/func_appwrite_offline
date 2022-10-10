@@ -4,7 +4,8 @@
   "description": "Change in ``` appwrite.json``` for your options",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --config jestconfig.json",
+    "test:me": "jest --config jestconfig.json -t "
   },
   "repository": {
     "type": "git",
