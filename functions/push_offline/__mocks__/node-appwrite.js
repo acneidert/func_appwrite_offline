@@ -23,7 +23,6 @@ class Client extends AppClient {
     async call(method, url, headers= {}, params = {}) {
       const db = MemoryDb;
       const arrayUrl = url.split('/')
-      console.log('Mocked Pull')
       // create Document
       if(method === 'post') {
         if(params.documentId === 'this_is_a_error') throw new AppwriteException('error_ok')

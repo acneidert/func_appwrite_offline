@@ -54,9 +54,8 @@ afterAll(async () => {
 describe('Test pullFunction', () => {
     test('It pull data', async () => {
       const { databases } = getAppwriteConn();
-      pullFunction(databases, new Date(2022, 9, 1).toISOString())
-      console.log(DOCS.INS)
-      expect(1 === 1).toBeTruthy();
+      const allGt = await pullFunction(databases, 'teste', 'col_teste', new Date(2022, 9, 10).toISOString());
+      expect(allGt.documents.length).toBeGreaterThan(0);
     });
   });
   

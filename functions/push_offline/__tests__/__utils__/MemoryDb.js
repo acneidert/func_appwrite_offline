@@ -3,6 +3,12 @@ const operators = {
     if (value instanceof Array) return value.includes(doc[attribute]);
     return doc[attribute] === value;
   },
+  greaterThan: (attribute, value) => (doc) => {
+    // "$updatedAt", ["2022-10-01T03:00:00.000Z"])
+    const date = new Date(doc[attribute]);
+    if (value instanceof Array) return date > new Date(value[0]);
+    return date > new Date(value);
+  } 
 };
 
 class MemoryDb {
@@ -50,6 +56,7 @@ class MemoryDb {
   }
 
   _parseQuery(query) {
+    console.log(query)
     const rgxMethod = /(.*?)(?=\()/g;
     const rgxValues = /(?<=\[)(.*?)(?=\])/g;
     const rgxAttribute = /(?<=\(")(.*?)(?=\")/g;
