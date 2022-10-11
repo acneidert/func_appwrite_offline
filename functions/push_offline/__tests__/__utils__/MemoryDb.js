@@ -56,7 +56,6 @@ class MemoryDb {
   }
 
   _parseQuery(query) {
-    console.log(query)
     const rgxMethod = /(.*?)(?=\()/g;
     const rgxValues = /(?<=\[)(.*?)(?=\])/g;
     const rgxAttribute = /(?<=\(")(.*?)(?=\")/g;
