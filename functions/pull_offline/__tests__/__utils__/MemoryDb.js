@@ -73,7 +73,9 @@ class MemoryDb {
     delete this.data[id];
   }
   resetDatabase() {
-    this.data = {}
+    Object.keys(this.data).map( key => {
+      this.delete(key)
+    })
   }
 }
 

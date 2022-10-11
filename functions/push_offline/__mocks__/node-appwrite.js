@@ -15,13 +15,15 @@ const { Storage } = require('node-appwrite');
 const { Teams } = require('node-appwrite');
 const { Users } = require('node-appwrite');
 const { MemoryDb } = require('../__tests__/__utils__/MemoryDb');
-
+function randomInterval(min, max) { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
 class Client extends AppClient {
     offline = false;
     async call(method, url, headers= {}, params = {}) {
       const db = MemoryDb;
       const arrayUrl = url.split('/')
-      
+      console.log('Mocked Pull')
       // create Document
       if(method === 'post') {
         if(params.documentId === 'this_is_a_error') throw new AppwriteException('error_ok')
@@ -36,7 +38,7 @@ class Client extends AppClient {
             'delete("user:00000000000000000000")'
           ],
           '$createdAt': new Date(0,0,0).toISOString(),
-          '$updatedAt': new Date(0,0,0).toISOString(),
+          '$updatedAt': new Date(2022,9, randomInterval(5,11) ).toISOString(),
           '$collectionId': collection,
           '$databaseId': database
         });

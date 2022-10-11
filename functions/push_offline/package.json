@@ -1,5 +1,5 @@
 {
-  "name": "appwrite-function",
+  "name": "push-offline",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",

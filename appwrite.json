@@ -1,40 +1,30 @@
 {
-    "projectId": "offline",
-    "projectName": "offline",
-    "functions": [
-        {
-            "$id": "pull_offline",
-            "name": "pull_offline",
-            "runtime": "node-16.0",
-            "path": "functions/pull_offline",
-            "entrypoint": "src/index.js",
-            "ignore": [
-                "node_modules",
-                "__tests__",
-                "__mocks__",
-                ".npm"
-            ],
-            "execute": [],
-            "events": [],
-            "schedule": "",
-            "timeout": 15
-        },
-        {
-            "$id": "push_offline",
-            "name": "push_offline",
-            "runtime": "node-16.0",
-            "path": "functions/push_offline",
-            "entrypoint": "src/index.js",
-            "ignore": [
-                "node_modules",
-                "__tests__",
-                "__mocks__",
-                ".npm"
-            ],
-            "execute": [],
-            "events": [],
-            "schedule": "",
-            "timeout": 15
-        }
-    ]
+  "projectId": "offline",
+  "projectName": "offline",
+  "functions": [
+    {
+      "$id": "pull_offline",
+      "name": "pull_offline",
+      "runtime": "node-16.0",
+      "path": "functions/pull_offline",
+      "entrypoint": "src/index.js",
+      "ignore": ["node_modules", "__tests__", "__mocks__", ".npm"],
+      "execute": [],
+      "events": [],
+      "schedule": "",
+      "timeout": 15
+    },
+    {
+      "$id": "push_offline",
+      "name": "push_offline",
+      "runtime": "node-16.0",
+      "path": "functions/push_offline",
+      "entrypoint": "src/index.js",
+      "ignore": ["node_modules", "__tests__", "__mocks__", ".npm"],
+      "execute": [],
+      "events": [],
+      "schedule": "",
+      "timeout": 15
+    }
+  ]
 }

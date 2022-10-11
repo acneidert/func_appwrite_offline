@@ -2,5 +2,6 @@
     "verbose": true,
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
     "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
-    "testPathIgnorePatterns": ["/__fixtures__/", "/__utils__/"]
+    "testPathIgnorePatterns": ["/__fixtures__/", "/__utils__/"],
+    "roots": ["<rootDir>/functions/pull_offline", "<rootDir>/functions/push_offline"]
   }
